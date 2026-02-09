@@ -1,7 +1,5 @@
-// Employee.cpp
 #include "Employee.h"
 
-// ================= Employee Base Class =================
 Employee::Employee() : name("Unknown"), id(0), basicSalary(0.0) {}
 
 Employee::Employee(string n, int i, double salary)
@@ -18,7 +16,6 @@ void Employee::displayInfo() const {
     cout << "ID: " << id << endl;
 }
 
-// ================= RegularEmployee =================
 RegularEmployee::RegularEmployee(string n, int i, double salary, int hours)
     : Employee(n, i, salary), overtimeHours(hours) {}
 
@@ -33,7 +30,6 @@ void RegularEmployee::displayInfo() const {
     cout << "Overtime Hours: " << overtimeHours << endl;
 }
 
-// ================= Manager =================
 Manager::Manager(string n, int i, double salary, double b)
     : Employee(n, i, salary), bonus(b) {}
 
