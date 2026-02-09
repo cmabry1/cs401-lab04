@@ -1,4 +1,3 @@
-// main.cpp
 #include "Employee.h"
 
 int main() {
