@@ -1,4 +1,3 @@
-// Employee.h
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
 
@@ -6,7 +5,6 @@
 #include <string>
 using namespace std;
 
-// ================= BASE CLASS =================
 class Employee {
 protected:
     string name;
@@ -26,7 +24,6 @@ public:
     virtual void displayInfo() const;
 };
 
-// ================= DERIVED CLASS: RegularEmployee =================
 class RegularEmployee : public Employee {
 private:
     int overtimeHours;
@@ -39,7 +36,6 @@ public:
     void displayInfo() const override;
 };
 
-// ================= DERIVED CLASS: Manager =================
 class Manager : public Employee {
 private:
     double bonus;
